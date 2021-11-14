@@ -29,9 +29,9 @@ function playGame() {
 }
 
 function newCard() {
-    let thirdCard = Math.floor(Math.random()*11) + 1
-    cards.push(thirdCard)
-    sum += thirdCard
+    let newCard = Math.floor(Math.random()*11) + 1
+    cards.push(newCard)
+    sum += newCard
 
     playGame()
 }
