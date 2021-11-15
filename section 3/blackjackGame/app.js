@@ -1,15 +1,25 @@
-let firstCard = Math.floor(Math.random()*11) + 1
-let secondCard = Math.floor(Math.random()*11) + 1
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard
+let cards = []
+let sum = 0
+let isAlive = false
 let hasBlackjack = false
-let isAlive = true
 let message
 let messageEl = document.getElementById('message-el')
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
+let playerEl = document.getElementById('player-el')
+let player
 
 function startGame(){
+    let firstCard = Math.floor(Math.random()*11) + 1
+    let secondCard = Math.floor(Math.random()*11) + 1
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+    isAlive = true
+    player = {
+        name: 'Deyvid',
+        coins: 145
+    }
+    playerEl.textContent = player.name + ": $" + player.coins
     playGame()
 }
 
@@ -29,9 +39,10 @@ function playGame() {
 }
 
 function newCard() {
+    if (isAlive === true && hasBlackjack === false) {
     let newCard = Math.floor(Math.random()*11) + 1
     cards.push(newCard)
     sum += newCard
-
     playGame()
+    }
 }
