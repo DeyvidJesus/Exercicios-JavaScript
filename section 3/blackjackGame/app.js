@@ -10,13 +10,15 @@ let playerEl = document.getElementById('player-el')
 let player
 
 function startGame(){
+    cards = []
+    sum = 0
     let firstCard = Math.floor(Math.random()*11) + 1
     let secondCard = Math.floor(Math.random()*11) + 1
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     isAlive = true
     player = {
-        name: 'Deyvid',
+        name: prompt('Write your name:'),
         coins: 145
     }
     playerEl.textContent = player.name + ": $" + player.coins
