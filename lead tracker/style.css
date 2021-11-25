@@ -21,9 +21,24 @@ button{
     border: none;
     color: white;
     font-weight: bold;
+    min-width: 350px;
 }
 
 button:hover{
     background-color: #497430;
     cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+}
+
+li{
+    margin-top: 5px;
+}
+
+a{
+    color: #5f9341;
 }
