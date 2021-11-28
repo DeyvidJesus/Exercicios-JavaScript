@@ -1,1 +1,1 @@
-# JavaScript Exercises
+# Chrome Extension
