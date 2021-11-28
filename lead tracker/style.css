@@ -14,19 +14,30 @@ input{
 }
 
 button{
-    width: 130px;
+    width: 100px;
     height: 40px;
     padding: 10px;
+    min-width: 350px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#input-btn{
     background-color: #5f9341;
-    border: none;
+    border: 1px solid #5f9341;
     color: white;
     font-weight: bold;
-    min-width: 350px;
 }
 
 button:hover{
-    background-color: #497430;
     cursor: pointer;
+}
+
+#delete-btn{
+    background-color: #fff;
+    color: #5f9341;
+    border: 1px solid #5f9341;
+    font-weight: bold;
 }
 
 ul{
